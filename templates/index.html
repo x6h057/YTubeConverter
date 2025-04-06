@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YTubeConverter - YouTube Video Converter</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+</head>
+<body>
+    <div class="container">
+        <h1>YTubeConverter</h1>
+        
+        <form id="download-form" action="/download" method="POST">
+            <input type="text" name="urlInput" placeholder="🎵 Enter YouTube URL 🎵" required>
+            <select name="format" class="styled-select">
+                <option value="mp3">🎧 MP3 (Audio Only)</option>
+                <option value="mp4">📺 MP4 (Video & Audio)</option>
+            </select>
+            <button type="submit">⬇️ Download ⬇️</button>
+        </form>
+    </div>
+</body>
+</html>

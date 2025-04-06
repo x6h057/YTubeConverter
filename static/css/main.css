@@ -1,0 +1,131 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #FF0000 33%, #141414 33%, #141414 66%, #FF0000 66%); /* YouTube Red, Black, and White */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.container {
+    background-color: rgba(30, 30, 30);
+    padding: 60px 60px;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgb(255, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    color: white;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #ff0000;
+    background-color: #141414;
+    transition: background-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    background-color: #f9f9f9;
+    outline: none;
+}
+
+/* Styled select dropdown */
+.styled-select {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #141414;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+    appearance: none; /* Removes default browser styles */
+    text-align: center;
+}
+
+/* Hover and focus effects */
+.styled-select:hover,
+.styled-select:focus {
+    background-color: #ff0000;
+    color: #ffffff;
+    outline: none;
+}
+
+
+button {
+    font-weight: bold;
+    background-color: #FF0000;
+    background-color: #141414;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    font-size: 19px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 50%;
+}
+
+button:hover {
+    background-color: #E60000;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 30px;
+    }
+    
+    h1 {
+        font-size: 1.75rem;
+    }
+    
+    input[type="text"] {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+    
+    button {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+    }
+}
